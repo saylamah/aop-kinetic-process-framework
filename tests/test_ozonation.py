@@ -13,7 +13,7 @@ def test_hydroxyl_radical_production_from_ozone():
         hydroxyl_yield_mol_per_mol_ozone=yield_oh,
     )
 
-    assert oh_produced == 2.1e-6
+    assert abs(oh_produced - 2.1e-6) < 1.0e-18
 
 
 def test_hydroxyl_radical_generation_rate_from_ozone_rate():
@@ -25,4 +25,4 @@ def test_hydroxyl_radical_generation_rate_from_ozone_rate():
         hydroxyl_yield_mol_per_mol_ozone=yield_oh,
     )
 
-    assert oh_rate == 2.1e-9
+    assert abs(oh_rate - 2.1e-9) < 1.0e-21
