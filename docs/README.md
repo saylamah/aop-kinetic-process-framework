@@ -1,7 +1,6 @@
 # Documentation
 
 This folder contains the main documentation for the AOP Kinetic Process Framework.
-This documentation supports Version 0.1.2 of the framework.
 
 ## Recommended reading order
 
@@ -92,6 +91,6 @@ docs/units_and_conventions.md
 
 ## Repository status
 
-This documentation supports Version 0.1.1 of the framework.
+This documentation supports Version 0.1.2 of the framework.
 
 The current version is intended for transparent screening-level engineering calculations, research support, and education. It is not a validated full-scale plant-design simulator.
