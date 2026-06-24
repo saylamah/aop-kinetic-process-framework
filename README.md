@@ -14,6 +14,7 @@ Main documentation pages:
 - [API Reference](docs/api_reference.md)
 - [Scientific Background](docs/scientific_background.md)
 - [Assumptions and Limitations](docs/assumptions_and_limitations.md)
+- [Units and Conventions](docs/units_and_conventions.md)
 - [Roadmap](ROADMAP.md)
 - [Changelog](CHANGELOG.md)
 
