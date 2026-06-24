@@ -154,6 +154,13 @@ File:
 ```text
 examples/08_unit_conversions_for_matrix_setup.py
 
+## Example 09 — Carbonate-system scavenging estimate
+
+File:
+
+```text
+examples/09_carbonate_system_scavenging.py
+
 ## Recommended learning order
 
 For a new user, the recommended order is:
@@ -167,6 +174,7 @@ For a new user, the recommended order is:
 6. 06_treatment_train_screening.py
 7. 07_reactor_scale_indicators.py
 8. 08_unit_conversions_for_matrix_setup.py
+9. 09_carbonate_system_scavenging.py
 ```
 
 This order moves from radical competition chemistry to apparent kinetics, energy-related implications, oxidant comparison, visualization, and treatment-train interpretation.
