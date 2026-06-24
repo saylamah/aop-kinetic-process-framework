@@ -156,6 +156,34 @@ E_m = P * t / [V * (C0 - C)]
 | `tau_opt` | optical thickness | dimensionless |
 | `sigma`   | cavitation number | dimensionless |
 
+## Carbonate-system quantities
+
+| Quantity               | Meaning                                                 | Unit          |
+| ---------------------- | ------------------------------------------------------- | ------------- |
+| `pH`                   | water pH                                                | dimensionless |
+| `pka2`                 | second dissociation pKa of carbonic acid                | dimensionless |
+| `alkalinity_eq_L`      | alkalinity                                              | eq/L          |
+| `bicarbonate_mol_L`    | bicarbonate concentration                               | mol/L         |
+| `carbonate_mol_L`      | carbonate concentration                                 | mol/L         |
+| `bicarbonate_fraction` | fraction of bicarbonate in bicarbonate + carbonate pool | dimensionless |
+| `carbonate_fraction`   | fraction of carbonate in bicarbonate + carbonate pool   | dimensionless |
+
+The carbonate-to-bicarbonate ratio is estimated as:
+
+```text
+[CO3--] / [HCO3-] = 10^(pH - pKa2)
+```
+
+The simplified alkalinity relationship is:
+
+```text
+Alk = [HCO3-] + 2[CO3--]
+```
+
+This approximation is useful for screening-level AOP scavenging calculations.
+
+It does not include all alkalinity contributors, such as hydroxide, hydrogen ion, phosphate, ammonia, borate, organic acids, or other site-specific species.
+
 ## Recommended naming convention
 
 Use clear variable names with units included where possible.
