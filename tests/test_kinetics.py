@@ -24,7 +24,7 @@ def test_apparent_first_order_rate_constant():
 
     k_app = apparent_first_order_rate_constant(k_oh, oh)
 
-    assert k_app == 1.0e-6
+    assert abs(k_app - 1.0e-6) < 1.0e-18
 
 
 def test_first_order_remaining_fraction():
