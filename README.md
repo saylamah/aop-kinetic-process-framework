@@ -80,6 +80,7 @@ The current implementation includes:
 * H2O2 radical-yield calculations,
 * reactor-scale dimensionless indicators,
 * treatment-train screening logic,
+* unit-conversion utilities for mg/L, µg/L, mol/L, DOC, and alkalinity,
 * plotting utilities,
 * representative wastewater matrix data,
 * working example scripts,
@@ -126,6 +127,7 @@ aop-kinetic-process-framework/
 │       ├── h2o2.py
 │       ├── reactor.py
 │       ├── treatment_train.py
+│       ├── conversions.py
 │       └── plotting.py
 │
 └── tests/
@@ -135,6 +137,7 @@ aop-kinetic-process-framework/
     ├── test_ozonation.py
     ├── test_h2o2.py
     ├── test_reactor.py
+    ├── test_conversions.py
     └── test_treatment_train.py
 ```
 
