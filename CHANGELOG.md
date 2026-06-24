@@ -12,10 +12,12 @@ The format follows a simple version-based structure.
 - Added project URLs for homepage, documentation, repository, issues, and changelog.
 - Added package classifiers for scientific, engineering, educational, and Python-version metadata.
 - Added carbonate-system units and conventions to `docs/units_and_conventions.md`.
+- Example 10 for evaluating pH effects on carbonate-system radical scavenging.
+- Documentation updates for the pH-sensitivity example in README, quickstart, and examples documentation.
 
 ### Notes
 
-These updates improve package discoverability, documentation clarity, and unit consistency for carbonate-system scavenging calculations.
+These updates improve package discoverability, documentation clarity, unit consistency, and pH-sensitive carbonate-system scavenging interpretation.
 
 ## [0.1.2] - Carbonate-system scavenging update
 
