@@ -60,29 +60,66 @@ The current implementation includes:
 * apparent first-order kinetic calculations,
 * treatment-time calculations,
 * simplified energy indicators,
+* ozone radical-yield calculations,
+* H2O2 radical-yield calculations,
+* reactor-scale dimensionless indicators,
+* treatment-train screening logic,
+* plotting utilities,
 * representative wastewater matrix data,
-* one working example script.
+* working example scripts,
+* automated tests using GitHub Actions.
 
 ## Repository structure
 
 ```text
+```text
 aop-kinetic-process-framework/
 │
 ├── README.md
+├── CITATION.cff
 ├── pyproject.toml
+│
+├── .github/
+│   └── workflows/
+│       └── python-tests.yml
 │
 ├── data/
 │   └── representative_effluent_matrix.csv
 │
-├── examples/
-│   └── 01_matrix_scavenging_secondary_effluent.py
+├── docs/
+│   ├── theory.md
+│   ├── examples.md
+│   └── assumptions_and_limitations.md
 │
-└── src/
-    └── aop_framework/
-        ├── __init__.py
-        ├── scavenging.py
-        ├── kinetics.py
-        └── energy.py
+├── examples/
+│   ├── 01_matrix_scavenging_secondary_effluent.py
+│   ├── 02_kapp_and_treatment_time.py
+│   ├── 03_doc_sensitivity.py
+│   ├── 04_oxidant_radical_yields.py
+│   ├── 05_plot_scavenging_contributions.py
+│   ├── 06_treatment_train_screening.py
+│   └── 07_reactor_scale_indicators.py
+│
+├── src/
+│   └── aop_framework/
+│       ├── __init__.py
+│       ├── scavenging.py
+│       ├── kinetics.py
+│       ├── energy.py
+│       ├── ozonation.py
+│       ├── h2o2.py
+│       ├── reactor.py
+│       ├── treatment_train.py
+│       └── plotting.py
+│
+└── tests/
+    ├── test_scavenging.py
+    ├── test_kinetics.py
+    ├── test_energy.py
+    ├── test_ozonation.py
+    ├── test_h2o2.py
+    ├── test_reactor.py
+    └── test_treatment_train.py
 ```
 
 ## Example
