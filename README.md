@@ -81,6 +81,7 @@ The current implementation includes:
 * reactor-scale dimensionless indicators,
 * treatment-train screening logic,
 * unit-conversion utilities for mg/L, µg/L, mol/L, DOC, and alkalinity,
+* carbonate-system utilities for bicarbonate/carbonate estimation from alkalinity and pH,
 * plotting utilities,
 * representative wastewater matrix data,
 * working example scripts,
@@ -116,10 +117,14 @@ aop-kinetic-process-framework/
 │   ├── 05_plot_scavenging_contributions.py
 │   ├── 06_treatment_train_screening.py
 │   └── 07_reactor_scale_indicators.py
+│   ├── 08_unit_conversions_for_matrix_setup.py
+│   └── 09_carbonate_system_scavenging.py
 │
 ├── src/
 │   └── aop_framework/
 │       ├── __init__.py
+│       ├── carbonate.py
+│       ├── conversions.py
 │       ├── scavenging.py
 │       ├── kinetics.py
 │       ├── energy.py
@@ -127,17 +132,18 @@ aop-kinetic-process-framework/
 │       ├── h2o2.py
 │       ├── reactor.py
 │       ├── treatment_train.py
-│       ├── conversions.py
 │       └── plotting.py
 │
 └── tests/
+    ├── test_carbonate.py
+    ├── test_conversions.py
     ├── test_scavenging.py
     ├── test_kinetics.py
     ├── test_energy.py
     ├── test_ozonation.py
     ├── test_h2o2.py
     ├── test_reactor.py
-    ├── test_conversions.py
+    ├── test_imports.py
     └── test_treatment_train.py
 ```
 
