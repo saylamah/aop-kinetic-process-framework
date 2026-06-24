@@ -200,5 +200,4 @@ Scientific documentation, conceptual descriptions, and example data should be ci
 ## Author
 
 Ahmad Saylam
-R&D and Technology Development
-Applied physical-chemical sciences, thermochemical processes, and sustainable industrial innovation
+R&D Leader | Combustion, Reactive & Thermochemical Processes | Scale-Up & Sustainable Industrial Innovation
