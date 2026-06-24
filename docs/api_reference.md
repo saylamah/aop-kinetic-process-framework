@@ -30,6 +30,75 @@ mg/L = mol/L * molar_mass_g_mol * 1e3
 µg/L = mol/L * molar_mass_g_mol * 1e6
 eq/L = (mg CaCO3/L * 1e-3) / 50.043
 
+## `carbonate.py`
+
+This module contains simplified carbonate-system utilities for estimating bicarbonate and carbonate concentrations from alkalinity and pH.
+
+These functions are useful because bicarbonate and carbonate can significantly contribute to hydroxyl-radical scavenging in wastewater AOP systems.
+
+### `CarbonateSystemResult`
+
+Dataclass containing simplified carbonate-system results.
+
+Main fields:
+
+```text
+pH
+alkalinity_eq_L
+bicarbonate_mol_L
+carbonate_mol_L
+carbonate_fraction
+bicarbonate_fraction
+```
+
+### `carbonate_bicarbonate_ratio(pH, pka2=10.33)`
+
+Calculates the carbonate-to-bicarbonate ratio:
+
+```text
+[CO3--] / [HCO3-] = 10^(pH - pKa2)
+```
+
+The default `pKa2 = 10.33` is a representative value at approximately 25 °C.
+
+### `estimate_bicarbonate_carbonate_from_alkalinity(alkalinity_eq_L, pH, pka2=10.33)`
+
+Estimates bicarbonate and carbonate concentrations from alkalinity and pH using the simplified relationship:
+
+```text
+Alk = [HCO3-] + 2[CO3--]
+```
+
+with:
+
+```text
+r = [CO3--] / [HCO3-] = 10^(pH - pKa2)
+```
+
+Therefore:
+
+```text
+[HCO3-] = Alk / (1 + 2r)
+
+[CO3--] = r * [HCO3-]
+```
+
+### Important limitation
+
+This is a screening-level carbonate-system estimate.
+
+It neglects contributions from:
+
+* hydroxide,
+* hydrogen ion,
+* organic acids,
+* phosphate,
+* ammonia,
+* borate,
+* other alkalinity contributors.
+
+For detailed carbonate chemistry, a full aqueous-equilibrium model should be used.
+
 ## `scavenging.py`
 
 This module contains functions for hydroxyl-radical scavenging calculations.
