@@ -161,6 +161,13 @@ File:
 ```text
 examples/09_carbonate_system_scavenging.py
 
+## Example 10 — pH effect on carbonate-system scavenging
+
+File:
+
+```text
+examples/10_pH_effect_on_carbonate_scavenging.py
+
 ## Recommended learning order
 
 For a new user, the recommended order is:
@@ -175,6 +182,7 @@ For a new user, the recommended order is:
 7. 07_reactor_scale_indicators.py
 8. 08_unit_conversions_for_matrix_setup.py
 9. 09_carbonate_system_scavenging.py
+10. 10_pH_effect_on_carbonate_scavenging.py
 ```
 
 This order moves from radical competition chemistry to apparent kinetics, energy-related implications, oxidant comparison, visualization, and treatment-train interpretation.
