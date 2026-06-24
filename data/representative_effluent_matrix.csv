@@ -1,0 +1,7 @@
+species,concentration_mol_L,k_oh_L_mol_s,group,notes
+doc_lumped,1.0,2.30e5,bulk_organic_matter,lumped DOC pseudo-first-order scavenging contribution
+bicarbonate,6.20e-3,8.50e6,inorganic_scavenger,representative alkalinity-related scavenger
+carbonate,4.77e-5,3.90e8,inorganic_scavenger,pH-dependent carbonate scavenger
+nitrite,6.20e-7,1.00e10,inorganic_scavenger,reactive inorganic scavenger
+carbamazepine,4.23e-8,1.00e9,target_micropollutant,example target pollutant at about 10 microgram per liter
+diclofenac,3.38e-8,1.00e10,target_micropollutant,example target pollutant at about 10 microgram per liter
