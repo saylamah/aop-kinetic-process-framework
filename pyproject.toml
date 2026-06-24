@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aop-kinetic-process-framework"
+version = "0.1.0"
+description = "Python framework for matrix-aware kinetic and process-level evaluation of advanced oxidation processes in wastewater treatment."
+authors = [
+    { name = "Ahmad Saylam" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = [
+    "advanced oxidation processes",
+    "wastewater treatment",
+    "radical scavenging",
+    "kinetics",
+    "hydroxyl radical",
+    "micropollutants",
+    "process engineering"
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "jupyter",
+    "ipykernel"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
