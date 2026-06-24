@@ -6,6 +6,10 @@ The format follows a simple version-based structure.
 
 ## [Unreleased]
 
+No unreleased changes yet.
+
+## [0.1.1] - Usability, governance, and unit-conversion update
+
 ### Added
 
 * Contribution guidelines through `CONTRIBUTING.md`.
