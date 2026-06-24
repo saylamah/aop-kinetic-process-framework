@@ -15,6 +15,20 @@ Common functions can also be imported directly:
 ```python
 from aop_framework import Species, total_scavenging_capacity
 ```
+## `conversions.py`
+
+This module contains unit-conversion utilities for converting common wastewater concentration units into the units needed for kinetic calculations.
+
+### `mg_L_to_mol_L(concentration_mg_L, molar_mass_g_mol)`
+
+Converts concentration from `mg/L` to `mol/L`.
+
+```text
+mol/L = (mg/L * 1e-3) / molar_mass_g_mol
+mol/L = (µg/L * 1e-6) / molar_mass_g_mol
+mg/L = mol/L * molar_mass_g_mol * 1e3
+µg/L = mol/L * molar_mass_g_mol * 1e6
+eq/L = (mg CaCO3/L * 1e-3) / 50.043
 
 ## `scavenging.py`
 
