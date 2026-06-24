@@ -6,16 +6,20 @@ The format follows a simple version-based structure.
 
 ## [Unreleased]
 
+No unreleased changes yet.
+
+## [0.1.2] - Carbonate-system scavenging update
+
 ### Added
 
-* Carbonate-system utility module for estimating bicarbonate and carbonate concentrations from alkalinity and pH.
-* `CarbonateSystemResult` dataclass.
-* Carbonate-to-bicarbonate ratio calculation.
-* Simplified bicarbonate/carbonate speciation from alkalinity and pH.
-* Tests for carbonate-system utilities.
-* Example 09 for carbonate-system scavenging estimation.
-* API reference documentation for carbonate-system utilities.
-* README, quickstart, and examples documentation updates for the carbonate-system module.
+- Carbonate-system utility module for estimating bicarbonate and carbonate concentrations from alkalinity and pH.
+- `CarbonateSystemResult` dataclass.
+- Carbonate-to-bicarbonate ratio calculation.
+- Simplified bicarbonate/carbonate speciation from alkalinity and pH.
+- Tests for carbonate-system utilities.
+- Example 09 for carbonate-system scavenging estimation.
+- API reference documentation for carbonate-system utilities.
+- README, quickstart, and examples documentation updates for the carbonate-system module.
 
 ### Notes
 
