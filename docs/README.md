@@ -12,6 +12,7 @@ For new users, the recommended order is:
 4. [API Reference](api_reference.md)
 5. [Scientific Background](scientific_background.md)
 6. [Assumptions and Limitations](assumptions_and_limitations.md)
+7. [Units and Conventions](units_and_conventions.md)
 
 ## Quickstart
 
@@ -79,6 +80,14 @@ File:
 ```text
 docs/assumptions_and_limitations.md
 ```
+## Units and Conventions
+
+Defines the main units, symbols, and naming conventions used in the framework.
+
+File:
+
+```text
+docs/units_and_conventions.md
 
 ## Repository status
 
