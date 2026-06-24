@@ -1,0 +1,10 @@
+blank_issues_enabled: true
+
+contact_links:
+  - name: Project documentation
+    url: https://github.com/saylamah/aop-kinetic-process-framework/tree/main/docs
+    about: Read the documentation before opening a new issue.
+
+  - name: Repository roadmap
+    url: https://github.com/saylamah/aop-kinetic-process-framework/blob/main/ROADMAP.md
+    about: Check planned development directions before suggesting a new feature.
