@@ -2,7 +2,7 @@
 
 This roadmap describes planned development directions for the AOP Kinetic Process Framework.
 
-The current release, `v0.1.0`, provides a transparent screening-level Python framework for matrix-aware interpretation of advanced oxidation processes in wastewater treatment.
+The current release, `v0.1.1`, provides a transparent screening-level Python framework for matrix-aware interpretation of advanced oxidation processes in wastewater treatment.
 
 ## v0.1.0 — Initial framework
 
@@ -22,6 +22,22 @@ Main capabilities:
 - plotting utilities,
 - representative secondary-effluent matrix data,
 - documentation and automated tests.
+
+## v0.1.1 — Usability, governance, and unit-conversion update
+
+Status: released
+
+Main additions:
+
+- unit-conversion utilities for wastewater matrix setup,
+- tests for conversion functions,
+- Example 08 for practical unit conversion,
+- units and conventions documentation,
+- contribution guidelines,
+- code of conduct,
+- issue templates,
+- pull request template,
+- documentation updates.
 
 ## v0.2.0 — Expanded AOP process modules
 
