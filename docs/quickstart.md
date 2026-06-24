@@ -59,6 +59,7 @@ python examples/04_oxidant_radical_yields.py
 python examples/05_plot_scavenging_contributions.py
 python examples/06_treatment_train_screening.py
 python examples/07_reactor_scale_indicators.py
+python examples/08_unit_conversions_for_matrix_setup.py
 ```
 
 ## 7. Basic Python usage
