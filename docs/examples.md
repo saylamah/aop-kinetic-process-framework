@@ -165,6 +165,8 @@ For a new user, the recommended order is:
 4. 04_oxidant_radical_yields.py
 5. 05_plot_scavenging_contributions.py
 6. 06_treatment_train_screening.py
+7. 07_reactor_scale_indicators.py
+8. 08_unit_conversions_for_matrix_setup.py
 ```
 
 This order moves from radical competition chemistry to apparent kinetics, energy-related implications, oxidant comparison, visualization, and treatment-train interpretation.
