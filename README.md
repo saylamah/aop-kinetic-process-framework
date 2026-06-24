@@ -2,6 +2,19 @@
 
 Python framework for matrix-aware kinetic and process-level evaluation of advanced oxidation processes in wastewater treatment.
 
+[![Python tests](https://github.com/saylamah/aop-kinetic-process-framework/actions/workflows/python-tests.yml/badge.svg)](https://github.com/saylamah/aop-kinetic-process-framework/actions/workflows/python-tests.yml)
+
+## Documentation
+
+Main documentation pages:
+
+* [Quickstart](docs/quickstart.md)
+* [Theory Background](docs/theory.md)
+* [Examples](docs/examples.md)
+* [API Reference](docs/api_reference.md)
+* [Scientific Background](docs/scientific_background.md)
+* [Assumptions and Limitations](docs/assumptions_and_limitations.md)
+
 ## Purpose
 
 This repository provides transparent engineering calculations for advanced oxidation processes (AOPs), especially where radical chemistry, wastewater matrix effects, and apparent process performance need to be interpreted together.
