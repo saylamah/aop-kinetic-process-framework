@@ -140,6 +140,20 @@ Engineering use:
 
 This example helps decide whether AOP treatment is likely favorable, challenging, or inefficient without additional pretreatment or process integration.
 
+## Example 07 — Reactor-scale indicators
+
+File:
+
+```text
+examples/07_reactor_scale_indicators.py
+
+## Example 08 — Unit conversions for matrix setup
+
+File:
+
+```text
+examples/08_unit_conversions_for_matrix_setup.py
+
 ## Recommended learning order
 
 For a new user, the recommended order is:
