@@ -1,6 +1,7 @@
 # Documentation
 
 This folder contains the main documentation for the AOP Kinetic Process Framework.
+This documentation supports Version 0.1.2 of the framework.
 
 ## Recommended reading order
 
