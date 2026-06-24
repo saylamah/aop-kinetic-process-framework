@@ -6,7 +6,16 @@ The format follows a simple version-based structure.
 
 ## [Unreleased]
 
-No unreleased changes yet.
+### Added
+
+- Improved Python package metadata in `pyproject.toml`.
+- Added project URLs for homepage, documentation, repository, issues, and changelog.
+- Added package classifiers for scientific, engineering, educational, and Python-version metadata.
+- Added carbonate-system units and conventions to `docs/units_and_conventions.md`.
+
+### Notes
+
+These updates improve package discoverability, documentation clarity, and unit consistency for carbonate-system scavenging calculations.
 
 ## [0.1.2] - Carbonate-system scavenging update
 
