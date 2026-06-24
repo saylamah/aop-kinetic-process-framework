@@ -118,7 +118,8 @@ aop-kinetic-process-framework/
 │   ├── 06_treatment_train_screening.py
 │   └── 07_reactor_scale_indicators.py
 │   ├── 08_unit_conversions_for_matrix_setup.py
-│   └── 09_carbonate_system_scavenging.py
+│   ├── 09_carbonate_system_scavenging.py
+│   └── 10_pH_effect_on_carbonate_scavenging.py
 │
 ├── src/
 │   └── aop_framework/
