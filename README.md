@@ -8,12 +8,14 @@ Python framework for matrix-aware kinetic and process-level evaluation of advanc
 
 Main documentation pages:
 
-* [Quickstart](docs/quickstart.md)
-* [Theory Background](docs/theory.md)
-* [Examples](docs/examples.md)
-* [API Reference](docs/api_reference.md)
-* [Scientific Background](docs/scientific_background.md)
-* [Assumptions and Limitations](docs/assumptions_and_limitations.md)
+- [Quickstart](docs/quickstart.md)
+- [Theory Background](docs/theory.md)
+- [Examples](docs/examples.md)
+- [API Reference](docs/api_reference.md)
+- [Scientific Background](docs/scientific_background.md)
+- [Assumptions and Limitations](docs/assumptions_and_limitations.md)
+- [Roadmap](ROADMAP.md)
+- [Changelog](CHANGELOG.md)
 
 ## Purpose
 
