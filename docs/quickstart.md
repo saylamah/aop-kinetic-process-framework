@@ -61,6 +61,7 @@ python examples/06_treatment_train_screening.py
 python examples/07_reactor_scale_indicators.py
 python examples/08_unit_conversions_for_matrix_setup.py
 python examples/09_carbonate_system_scavenging.py
+python examples/10_pH_effect_on_carbonate_scavenging.py
 ```
 
 ## 7. Basic Python usage
