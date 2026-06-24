@@ -2,7 +2,7 @@ import aop_framework
 
 
 def test_package_version_exists():
-    assert aop_framework.__version__ == "0.1.0"
+    assert aop_framework.__version__ == "0.1.1"
 
 
 def test_main_functions_are_exposed():
