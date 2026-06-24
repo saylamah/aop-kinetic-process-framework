@@ -23,3 +23,9 @@ def test_conversion_functions_are_exposed():
     assert hasattr(aop_framework, "mol_L_to_ug_L")
     assert hasattr(aop_framework, "mg_C_L_to_mol_C_L")
     assert hasattr(aop_framework, "alkalinity_mg_CaCO3_L_to_eq_L")
+
+
+def test_carbonate_functions_are_exposed():
+    assert hasattr(aop_framework, "CarbonateSystemResult")
+    assert hasattr(aop_framework, "carbonate_bicarbonate_ratio")
+    assert hasattr(aop_framework, "estimate_bicarbonate_carbonate_from_alkalinity")
