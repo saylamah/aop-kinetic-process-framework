@@ -4,6 +4,11 @@ AOP Kinetic Process Framework.
 Python tools for matrix-aware kinetic and process-level evaluation of
 advanced oxidation processes in wastewater treatment.
 """
+from aop_framework.carbonate import (
+    CarbonateSystemResult,
+    carbonate_bicarbonate_ratio,
+    estimate_bicarbonate_carbonate_from_alkalinity,
+)
 from aop_framework.conversions import (
     alkalinity_mg_CaCO3_L_to_eq_L,
     mg_C_L_to_mol_C_L,
@@ -57,6 +62,9 @@ __all__ = [
     "__version__",
     "Species",
     "AOPScreeningResult",
+    "CarbonateSystemResult",
+    "carbonate_bicarbonate_ratio",
+    "estimate_bicarbonate_carbonate_from_alkalinity",
      "mg_L_to_mol_L",
     "ug_L_to_mol_L",
     "mol_L_to_mg_L",
