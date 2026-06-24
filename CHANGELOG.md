@@ -6,7 +6,22 @@ The format follows a simple version-based structure.
 
 ## [Unreleased]
 
-No unreleased changes yet.
+### Added
+
+* Carbonate-system utility module for estimating bicarbonate and carbonate concentrations from alkalinity and pH.
+* `CarbonateSystemResult` dataclass.
+* Carbonate-to-bicarbonate ratio calculation.
+* Simplified bicarbonate/carbonate speciation from alkalinity and pH.
+* Tests for carbonate-system utilities.
+* Example 09 for carbonate-system scavenging estimation.
+* API reference documentation for carbonate-system utilities.
+* README, quickstart, and examples documentation updates for the carbonate-system module.
+
+### Notes
+
+These additions improve matrix-aware scavenging analysis by allowing bicarbonate and carbonate concentrations to be estimated from common wastewater parameters such as alkalinity and pH.
+
+The carbonate-system calculation is screening-level and does not replace a full aqueous-equilibrium model.
 
 ## [0.1.1] - Usability, governance, and unit-conversion update
 
