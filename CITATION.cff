@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "AOP Kinetic Process Framework"
+message: "If you use this software, please cite it and the related scientific work."
+type: software
+
+authors:
+  - family-names: Saylam
+    given-names: Ahmad
+    email: a.saylam@raptech-technologie.de
+
+repository-code: "https://github.com/saylamah/aop-kinetic-process-framework"
+url: "https://github.com/saylamah/aop-kinetic-process-framework"
+
+abstract: "Python framework for matrix-aware kinetic and process-level evaluation of advanced oxidation processes in wastewater treatment."
+
+keywords:
+  - advanced oxidation processes
+  - wastewater treatment
+  - radical scavenging
+  - hydroxyl radical
+  - apparent kinetics
+  - micropollutants
+  - process engineering
+  - energy efficiency
+
+license: MIT
+version: "0.1.0"
+
+preferred-citation:
+  type: article
+  title: "A Unified Kinetic–Process Framework for Advanced Oxidation Processes: From Radical Chemistry to Reactor-Scale Performance in Wastewater Treatment"
+  authors:
+    - family-names: Saylam
+      given-names: Ahmad
+  year: 2026
+  doi: "10.5281/zenodo.19732394"
