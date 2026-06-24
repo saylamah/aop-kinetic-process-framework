@@ -2,7 +2,7 @@
 
 This roadmap describes planned development directions for the AOP Kinetic Process Framework.
 
-The current release, `v0.1.1`, provides a transparent screening-level Python framework for matrix-aware interpretation of advanced oxidation processes in wastewater treatment.
+The current release, `v0.1.2`, provides a transparent screening-level Python framework for matrix-aware interpretation of advanced oxidation processes in wastewater treatment.
 
 ## v0.1.0 — Initial framework
 
@@ -38,6 +38,20 @@ Main additions:
 - issue templates,
 - pull request template,
 - documentation updates.
+
+## v0.1.2 — Carbonate-system scavenging update
+
+Status: released
+
+Main additions:
+
+- carbonate-system utility module,
+- bicarbonate/carbonate estimation from alkalinity and pH,
+- carbonate-to-bicarbonate ratio calculation,
+- tests for carbonate-system utilities,
+- Example 09 for carbonate-system scavenging estimation,
+- API reference documentation for carbonate-system utilities,
+- README, quickstart, and examples documentation updates.
 
 ## v0.2.0 — Expanded AOP process modules
 
