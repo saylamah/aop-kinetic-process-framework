@@ -19,9 +19,8 @@ keywords = [
     "kinetics",
     "hydroxyl radical",
     "micropollutants",
-    "process engineering"
+    "process engineering",
 ]
-
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -38,6 +37,18 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "jupyter",
+    "ipykernel",
+]
 
 [project.urls]
 Homepage = "https://github.com/saylamah/aop-kinetic-process-framework"
@@ -45,19 +56,6 @@ Documentation = "https://github.com/saylamah/aop-kinetic-process-framework/tree/
 Repository = "https://github.com/saylamah/aop-kinetic-process-framework"
 Issues = "https://github.com/saylamah/aop-kinetic-process-framework/issues"
 Changelog = "https://github.com/saylamah/aop-kinetic-process-framework/blob/main/CHANGELOG.md"
-
-dependencies = [
-    "numpy",
-    "pandas",
-    "matplotlib"
-]
-
-[project.optional-dependencies]
-dev = [
-    "pytest",
-    "jupyter",
-    "ipykernel"
-]
 
 [tool.setuptools.packages.find]
 where = ["src"]
