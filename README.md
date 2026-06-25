@@ -1,5 +1,7 @@
 # AOP Kinetic Process Framework
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20841383.svg)](https://doi.org/10.5281/zenodo.20841383)
+
 Python framework for matrix-aware kinetic and process-level evaluation of advanced oxidation processes in wastewater treatment.
 
 [![Python tests](https://github.com/saylamah/aop-kinetic-process-framework/actions/workflows/python-tests.yml/badge.svg)](https://github.com/saylamah/aop-kinetic-process-framework/actions/workflows/python-tests.yml)
