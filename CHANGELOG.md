@@ -6,18 +6,22 @@ The format follows a simple version-based structure.
 
 ## [Unreleased]
 
+No unreleased changes yet.
+
+## [0.1.3] - 2026-06-25
+
 ### Added
 
 - Improved Python package metadata in `pyproject.toml`.
 - Added project URLs for homepage, documentation, repository, issues, and changelog.
 - Added package classifiers for scientific, engineering, educational, and Python-version metadata.
 - Added carbonate-system units and conventions to `docs/units_and_conventions.md`.
-- Example 10 for evaluating pH effects on carbonate-system radical scavenging.
-- Documentation updates for the pH-sensitivity example in README, quickstart, and examples documentation.
+- Added Example 10 for evaluating pH effects on carbonate-system radical scavenging.
+- Added documentation updates for the pH-sensitivity example in README, quickstart, and examples documentation.
 
 ### Notes
 
-These updates improve package discoverability, documentation clarity, unit consistency, and pH-sensitive carbonate-system scavenging interpretation.
+This patch release improves package discoverability, documentation clarity, unit consistency, and pH-sensitive carbonate-system scavenging interpretation.
 
 ## [0.1.2] - Carbonate-system scavenging update
 
