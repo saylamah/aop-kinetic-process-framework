@@ -1,212 +1,59 @@
 # AOP Kinetic Process Framework
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20841383.svg)](https://doi.org/10.5281/zenodo.20841383)
-
-Python framework for matrix-aware kinetic and process-level evaluation of advanced oxidation processes in wastewater treatment.
-
 [![Python tests](https://github.com/saylamah/aop-kinetic-process-framework/actions/workflows/python-tests.yml/badge.svg)](https://github.com/saylamah/aop-kinetic-process-framework/actions/workflows/python-tests.yml)
 
-## Documentation
+A Python framework for matrix-aware kinetic and process-level assessment of advanced oxidation processes in wastewater treatment.
 
-Main documentation pages:
-
-- [Quickstart](docs/quickstart.md)
-- [Theory Background](docs/theory.md)
-- [Examples](docs/examples.md)
-- [API Reference](docs/api_reference.md)
-- [Scientific Background](docs/scientific_background.md)
-- [Assumptions and Limitations](docs/assumptions_and_limitations.md)
-- [Units and Conventions](docs/units_and_conventions.md)
-- [Roadmap](ROADMAP.md)
-- [Changelog](CHANGELOG.md)
+---
 
 ## Purpose
 
-This repository provides transparent engineering calculations for advanced oxidation processes (AOPs), especially where radical chemistry, wastewater matrix effects, and apparent process performance need to be interpreted together.
+Advanced oxidation processes are often compared using pollutant-removal percentages or apparent first-order rate constants.
 
-The framework focuses on:
+These indicators can be misleading when wastewater-matrix constituents consume a substantial fraction of the generated reactive species.
 
-* hydroxyl-radical scavenging capacity,
-* radical utilization efficiency,
-* apparent first-order degradation kinetics,
-* treatment-time estimation,
-* simplified energy-related indicators,
-* matrix-aware interpretation of AOP performance.
+This repository provides transparent calculation tools for examining how:
 
-## Scientific concept
+- hydroxyl-radical generation;
+- dissolved organic matter;
+- bicarbonate and carbonate;
+- inorganic scavengers;
+- pollutant concentration;
+- radical competition;
+- reactor conditions;
+- oxidant utilization;
+- treatment time;
+- simplified energy indicators
 
-Advanced oxidation processes are often evaluated using apparent first-order degradation constants. In realistic wastewater matrices, these apparent constants are not controlled by intrinsic pollutant reactivity alone.
+interact to determine apparent AOP performance.
 
-They emerge from the combined effects of:
+The objective is not to identify one universally superior AOP. It is to improve engineering interpretation, comparison, screening, and validation planning for specific water matrices and treatment objectives.
 
-* radical generation,
-* radical scavenging by dissolved organic carbon and inorganic species,
-* target-pollutant concentration,
-* reactor and transport limitations,
-* operating conditions.
+---
 
-The starting framework follows the competition-kinetics interpretation:
+## Practical Engineering Questions
+
+The framework is intended to support questions such as:
+
+- Which matrix constituents dominate hydroxyl-radical consumption?
+- What fraction of generated radicals is used toward the target pollutant?
+- Why can two waters show different degradation rates under similar operating conditions?
+- How does dissolved organic carbon affect apparent treatment performance?
+- How do alkalinity and pH influence bicarbonate and carbonate scavenging?
+- What treatment time follows from an assumed apparent first-order rate constant?
+- Is poor performance associated primarily with radical generation or non-productive scavenging?
+- Which measurements are required before comparing AOP alternatives?
+- When might pretreatment or a treatment train be preferable to increasing oxidant or energy input?
+- Which assumptions must be validated before pilot- or plant-scale use?
+
+---
+
+## Scientific Concept
+
+The initial framework uses a simplified competition-kinetics and apparent steady-state representation.
+
+The total hydroxyl-radical scavenging capacity is expressed as:
 
 ```text
 k_scav = sum(kOH_i * C_i)
-
-[OH]_app = R_gen / k_scav
-
-k_app,j = kOH,j * [OH]_app
-
-eta_j = (kOH,j * C_j) / k_scav
-```
-
-where:
-
-```text
-k_scav   = total hydroxyl-radical scavenging capacity
-R_gen    = hydroxyl-radical generation rate
-[OH]_app = apparent steady-state hydroxyl-radical concentration
-k_app,j  = apparent first-order degradation constant for pollutant j
-eta_j    = radical utilization efficiency toward pollutant j
-```
-
-## Initial scope
-
-Version 0.1 focuses on screening-level calculations for representative secondary-effluent matrices.
-
-The current implementation includes:
-
-* matrix scavenging calculations,
-* radical utilization fractions,
-* apparent first-order kinetic calculations,
-* treatment-time calculations,
-* simplified energy indicators,
-* ozone radical-yield calculations,
-* H2O2 radical-yield calculations,
-* reactor-scale dimensionless indicators,
-* treatment-train screening logic,
-* unit-conversion utilities for mg/L, µg/L, mol/L, DOC, and alkalinity,
-* carbonate-system utilities for bicarbonate/carbonate estimation from alkalinity and pH,
-* plotting utilities,
-* representative wastewater matrix data,
-* working example scripts,
-* automated tests using GitHub Actions.
-
-## Repository structure
-
-```text
-```text
-aop-kinetic-process-framework/
-│
-├── README.md
-├── CITATION.cff
-├── pyproject.toml
-│
-├── .github/
-│   └── workflows/
-│       └── python-tests.yml
-│
-├── data/
-│   └── representative_effluent_matrix.csv
-│
-├── docs/
-│   ├── theory.md
-│   ├── examples.md
-│   └── assumptions_and_limitations.md
-│
-├── examples/
-│   ├── 01_matrix_scavenging_secondary_effluent.py
-│   ├── 02_kapp_and_treatment_time.py
-│   ├── 03_doc_sensitivity.py
-│   ├── 04_oxidant_radical_yields.py
-│   ├── 05_plot_scavenging_contributions.py
-│   ├── 06_treatment_train_screening.py
-│   └── 07_reactor_scale_indicators.py
-│   ├── 08_unit_conversions_for_matrix_setup.py
-│   ├── 09_carbonate_system_scavenging.py
-│   └── 10_pH_effect_on_carbonate_scavenging.py
-│
-├── src/
-│   └── aop_framework/
-│       ├── __init__.py
-│       ├── carbonate.py
-│       ├── conversions.py
-│       ├── scavenging.py
-│       ├── kinetics.py
-│       ├── energy.py
-│       ├── ozonation.py
-│       ├── h2o2.py
-│       ├── reactor.py
-│       ├── treatment_train.py
-│       └── plotting.py
-│
-└── tests/
-    ├── test_carbonate.py
-    ├── test_conversions.py
-    ├── test_scavenging.py
-    ├── test_kinetics.py
-    ├── test_energy.py
-    ├── test_ozonation.py
-    ├── test_h2o2.py
-    ├── test_reactor.py
-    ├── test_imports.py
-    └── test_treatment_train.py
-```
-
-## Example
-
-The first example calculates hydroxyl-radical scavenging contributions in a representative secondary-effluent matrix.
-
-```bash
-python examples/01_matrix_scavenging_secondary_effluent.py
-```
-
-The output reports:
-
-* total scavenging capacity,
-* pseudo-first-order scavenging contribution of each component,
-* radical consumption fraction,
-* percentage contribution of each matrix component.
-
-## Engineering interpretation
-
-The framework is based on the idea that AOP performance in real wastewater is usually matrix-controlled.
-
-Even highly reactive micropollutants may receive only a small fraction of generated hydroxyl radicals when dissolved organic carbon, bicarbonate, carbonate, nitrite, and other background constituents dominate radical consumption.
-
-Therefore, efficient AOP design should not maximize radical generation alone. It should improve useful radical utilization toward target contaminants while minimizing non-productive scavenging.
-
-## Status
-
-Early development.
-
-The current version is intended for:
-
-* research screening,
-* engineering interpretation,
-* education,
-* reproducible examples,
-* preparation for future model extensions.
-
-It is not yet a validated full-scale plant-design simulator.
-
-## Planned extensions
-
-Planned additions include:
-
-* DOC sensitivity example,
-* k_app and treatment-time example,
-* ozone radical-yield calculation,
-* plotting functions,
-* treatment-train screening logic,
-* comparison of UV/H2O2, ozonation, Fenton, hydrodynamic cavitation, and electrochemical AOPs,
-* documentation of assumptions and limitations,
-* validation examples from literature and experimental data.
-
-## License
-
-Code is released under the MIT License.
-
-Scientific documentation, conceptual descriptions, and example data should be cited appropriately when reused.
-
-## Author
-
-Ahmad Saylam
-R&D Leader | Combustion, Reactive & Thermochemical Processes | Scale-Up & Sustainable Industrial Innovation
